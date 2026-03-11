@@ -3,7 +3,7 @@ header {
     background-color: rgb(255, 209, 219);
     text-align:center;
     font-size:45px;
-    color:rgb(254, 165, 187);
+    color: rgb(249, 138, 168);
     font-weight:bold;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -41,6 +41,7 @@ nav.navbar{
 }
             
 .dividing-line {
+    padding-top: 15px;
     text-align: center;
     color: pink
 }
