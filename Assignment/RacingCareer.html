@@ -6,50 +6,65 @@
     <title>Umamusume Database | Race Record</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap JS -->
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
-
-    <!-- CSS -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="RacingCareer.css">
 
-    <script src="RacingCareer.js" defer></script>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 
 <body>
 
-    <!--Navigation-->
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg bg-custom-success px-3 sticky-top">
         <div class="container">
-            <div class="navbar-logo">
-                <img src="images/Misc/Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
-            </div>
-            <div class="navbar-brand text-white fw-bold fs-3">Racing Careers
+            <!-- Logo + Title -->
+            <div class="d-flex align-items-center">
+                <div class="navbar-logo">
+                    <img src="Uma_Musume_Pretty_Derby_JP_Logo.webp" alt="Uma Musume Logo">
+                </div>
+                <a class="navbar-brand text-white fw-bold fs-3" href="Frontpage.html">
+                    Umamusume Database
+                </a>
             </div>
 
+            <!-- Hamburger Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
+            <!-- Navigation links -->
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto d-flex gap-4">
+                <ul class="navbar-nav ms-auto d-flex gap-lg-4">
                     <li class="nav-item">
-                        <a class="nav-link" href="Frontpage.html">
-                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
-                            <div class="nav-text">Home</div>
+                        <a class="nav-link d-flex align-items-center gap-2" href="Frontpage.html">
+                            <img src="horseshoe.icon.png" class="nav-icon" alt="">
+                            <span class="nav-text">Home</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Profile.html">
-                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
-                            <div class="nav-text">Profile</div>
+                        <a class="nav-link d-flex align-items-center gap-2" href="Profile.html">
+                            <img src="horseshoe.icon.png" class="nav-icon" alt="">
+                            <span class="nav-text">Profile</span>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Trivia.html">
-                            <img src="Images/Misc/horseshoe.icon.png" class="nav-icon">
-                            <div class="nav-text">Trivia</div>
+                        <a class="nav-link d-flex align-items-center gap-2 active" href="RacingCareer.html">
+                            <img src="horseshoe.icon.png" class="nav-icon" alt="">
+                            <span class="nav-text">Racing Career</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2" href="Trivia.html">
+                            <img src="horseshoe.icon.png" class="nav-icon" alt="">
+                            <span class="nav-text">Trivia</span>
                         </a>
                     </li>
                 </ul>
@@ -57,949 +72,909 @@
         </div>
     </nav>
 
-    <div class="dividing-line">
+    <div class="diving-line">
         ｡..ꕤ••┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈••ꕤ..。
     </div>
 
-    <!-- Racing Records -->
-
+    <!-- Main Content -->
     <main class="records">
-
-        <!-- Agnes Tachyon -->
-
-        <section class="record-container">
-
-            <details id="agnes-tachyon">
-                <summary>Agnes Tachyon</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-                        <thead>
-
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td rowspan="3" class="region jpn">JPN</td>
-                                <td>2000</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>38,462,000</td>
-                            </tr>
-
-                            <tr>
-                                <td>2001</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>183,620,000</td>
-                            </tr>
-
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>4</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>222,082,000</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+        <div class="container my-4">
+            <!-- Agnes Tachyon -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#agnes-tachyon"
+                    aria-expanded="true">
+                    Agnes Tachyon
+                </button>
+                <div id="agnes-tachyon" class="collapse show">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th class="region-col">Region</th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" class="region jpn">JPN</td>
+                                    <td>2000</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>38,462,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>183,620,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>222,082,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details>
-        </section>
-
-        <!-- Daiwa Scarlet -->
-
-        <section class="record-container">
-
-            <details id="daiwa-scarlet">
-                <summary>Daiwa Scarlet</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-
-                            <tr>
-                                <td rowspan="4" class="region jpn">JPN</td>
-                                <td>2006</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>23,217,000</td>
-                            </tr>
-
-                            <tr>
-                                <td>2007</td>
-                                <td>7</td>
-                                <td>4</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>461,394,000</td>
-                            </tr>
-
-                            <tr>
-                                <td>2008</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>302,074,000</td>
-                            </tr>
-
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>12</td>
-                                <td>8</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>786,685,000</td>
-                            </tr>
-
-                        </tbody>
-
-                    </table>
+            <!-- Daiwa Scarlet -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#daiwa-scarlet">
+                    Daiwa Scarlet
+                </button>
+                <div id="daiwa-scarlet" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th class="region-col">Region</th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4" class="region jpn">JPN</td>
+                                    <td>2006</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>23,217,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2007</td>
+                                    <td>7</td>
+                                    <td>4</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>461,394,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2008</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>302,074,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>12</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>786,685,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details>
-
-        </section>
-
-        <!-- El Condor Pasa -->
-        <section class="record-container">
-
-            <details id="el-condor-pasa">
-                <summary>El Condor Pasa</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="3" class="region jpn">JPN</td>
-                                <td>1997</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>6,000,000</td>
-                            </tr>
-
-                            <tr>
-                                <td>1998</td>
-                                <td>6</td>
-                                <td>5</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>370,078,000</td>
-                            </tr>
-
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>7</td>
-                                <td>6</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>376,078,000</td>
-                            </tr>
-
-                            <tr>
-                                <td class="region fr">FR</td>
-                                <td>Total</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>-</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+            <!-- El Condor Pasa -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#el-condor-pasa">
+                    El Condor Pasa
+                </button>
+                <div id="el-condor-pasa" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" class="region jpn">JPN</td>
+                                    <td>1997</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>6,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>370,078,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>376,078,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="region fr">FR</td>
+                                    <td>Total</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Fine Motion -->
-        <section class="record-container">
-
-            <details id="fine-motion">
-                <summary>Fine Motion</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="5" class="region jpn">JPN</td>
-                                <td>2001</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>6,000,000</td>
-                            </tr>
-                            <tr>
-                                <td>2002</td>
-                                <td>6</td>
-                                <td>5</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>289,106,000</td>
-                            </tr>
-                            <tr>
-                                <td>2003</td>
-                                <td>4</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>117,460,000</td>
-                            </tr>
-                            <tr>
-                                <td>2004</td>
-                                <td>4</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>81,952,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>15</td>
-                                <td>8</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>4</td>
-                                <td>494,518,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Fine Motion -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#fine-motion">
+                    Fine Motion
+                </button>
+                <div id="fine-motion" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="5" class="region jpn">JPN</td>
+                                    <td>2001</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>6,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>289,106,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>117,460,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2004</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>81,952,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>15</td>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>494,518,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Gold Ship -->
-        <section class="record-container">
-            <details id="gold-ship">
-                <summary>Gold Ship</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="6" class="region jpn">JPN</td>
-                                <td>2011</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>49,495,000</td>
-                            </tr>
-                            <tr>
-                                <td>2012</td>
-                                <td>6</td>
-                                <td>5</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>590,294,000</td>
-                            </tr>
-                            <tr>
-                                <td>2013</td>
-                                <td>6</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>264,682,000</td>
-                            </tr>
-                            <tr>
-                                <td>2014</td>
-                                <td>5</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>273,970,000</td>
-                            </tr>
-                            <tr>
-                                <td>2015</td>
-                                <td>6</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>4</td>
-                                <td>219,326,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>27</td>
-                                <td>13</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>9</td>
-                                <td>1,397,767,000</td>
-                            </tr>
-                            <tr>
-                                <td class="region fr">FR</td>
-                                <td>Total</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>-</td>
-                            </tr>
-
-                        </tbody>
-                    </table>
+            <!-- Gold Ship -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#gold-ship">
+                    Gold Ship
+                </button>
+                <div id="gold-ship" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="6" class="region jpn">JPN</td>
+                                    <td>2011</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>49,495,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2012</td>
+                                    <td>6</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>590,294,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2013</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>264,682,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2014</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>273,970,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>219,326,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>27</td>
+                                    <td>13</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>9</td>
+                                    <td>1,397,767,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="region fr">FR</td>
+                                    <td>Total</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Grass Wonder -->
-        <section class="record-container">
-            <details id="grass-wonder">
-                <summary>Grass Wonder</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="5" class="region jpn">JPN</td>
-                                <td>1997</td>
-                                <td>4</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>114,694,000</td>
-                            </tr>
-                            <tr>
-                                <td>1998</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>141,886,000</td>
-                            </tr>
-                            <tr>
-                                <td>1999</td>
-                                <td>5</td>
-                                <td>4</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>435,066,000</td>
-                            </tr>
-                            <tr>
-                                <td>2000</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>0</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>15</td>
-                                <td>9</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>691,646,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Grass Wonder -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#grass-wonder">
+                    Grass Wonder
+                </button>
+                <div id="grass-wonder" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="5" class="region jpn">JPN</td>
+                                    <td>1997</td>
+                                    <td>4</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>114,694,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>141,886,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>5</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>435,066,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>15</td>
+                                    <td>9</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>691,646,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Haru Urara -->
-        <section class="record-container">
-            <details id="haru-urara">
-                <summary>Haru Urara</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="8" class="region jpn">JPN</td>
-                                <td>1998</td>
-                                <td>3</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>3</td>
-                                <td>94,000</td>
-                            </tr>
-                            <tr>
-                                <td>1999</td>
-                                <td>20</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>17</td>
-                                <td>517,000</td>
-                            </tr>
-                            <tr>
-                                <td>2000</td>
-                                <td>18</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>18</td>
-                                <td>99,000</td>
-                            </tr>
-                            <tr>
-                                <td>2001</td>
-                                <td>19</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>16</td>
-                                <td>198,000</td>
-                            </tr>
-                            <tr>
-                                <td>2002</td>
-                                <td>18</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>16</td>
-                                <td>107,000</td>
-                            </tr>
-                            <tr>
-                                <td>2003</td>
-                                <td>22</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>20</td>
-                                <td>50,000</td>
-                            </tr>
-                            <tr>
-                                <td>2004</td>
-                                <td>13</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>11</td>
-                                <td>64,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>113</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>7</td>
-                                <td>101</td>
-                                <td>1,129,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Haru Urara -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#haru-urara">
+                    Haru Urara
+                </button>
+                <div id="haru-urara" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="8" class="region jpn">JPN</td>
+                                    <td>1998</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>94,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>20</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>17</td>
+                                    <td>517,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2000</td>
+                                    <td>18</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>18</td>
+                                    <td>99,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2001</td>
+                                    <td>19</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>16</td>
+                                    <td>198,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>18</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>16</td>
+                                    <td>107,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2003</td>
+                                    <td>22</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>20</td>
+                                    <td>50,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2004</td>
+                                    <td>13</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>11</td>
+                                    <td>64,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>113</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>7</td>
+                                    <td>101</td>
+                                    <td>1,129,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Silence Suzuka -->
-        <section class="record-container">
-            <details id="silence-suzuka">
-                <summary>Silence Suzuka</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="3" class="region jpn">JPN</td>
-                                <td>1997</td>
-                                <td>8</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>4</td>
-                                <td>58,943,000</td>
-                            </tr>
-                            <tr>
-                                <td>1998</td>
-                                <td>7</td>
-                                <td>6</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>397,041,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>15</td>
-                                <td>9</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>5</td>
-                                <td>455,984,000</td>
-                            </tr>
-                            <tr>
-                                <td class="region hkg">HKG</td>
-                                <td>Total</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>-</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Silence Suzuka -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#silence-suzuka">
+                    Silence Suzuka
+                </button>
+                <div id="silence-suzuka" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" class="region jpn">JPN</td>
+                                    <td>1997</td>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>58,943,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>397,041,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>15</td>
+                                    <td>9</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>455,984,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="region hkg">HKG</td>
+                                    <td>Total</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Special Week -->
-        <section class="record-container">
-            <details id="special-week">
-                <summary>Special Week</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="4" class="region jpn">JPN</td>
-                                <td>1997</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>6,000,000</td>
-                            </tr>
-                            <tr>
-                                <td>1998</td>
-                                <td>8</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>443,659,000</td>
-                            </tr>
-                            <tr>
-                                <td>1999</td>
-                                <td>8</td>
-                                <td>5</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>642,964,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>17</td>
-                                <td>10</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>1,092,623,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Special Week -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#special-week">
+                    Special Week
+                </button>
+                <div id="special-week" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="4" class="region jpn">JPN</td>
+                                    <td>1997</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>6,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1998</td>
+                                    <td>8</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>443,659,000</td>
+                                </tr>
+                                <tr>
+                                    <td>1999</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>642,964,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>17</td>
+                                    <td>10</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1,092,623,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Tanino Gimlet -->
-        <section class="record-container">
-            <details id="tanino-gimlet">
-                <summary>Tanino Gimlet</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="3" class="region jpn">JPN</td>
-                                <td>2001</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>7,500,000</td>
-                            </tr>
-                            <tr>
-                                <td>2002</td>
-                                <td>6</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>378,510,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>8</td>
-                                <td>5</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>386,010,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Tanino Gimlet -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#tanino-gimlet">
+                    Tanino Gimlet
+                </button>
+                <div id="tanino-gimlet" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="3" class="region jpn">JPN</td>
+                                    <td>2001</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>7,500,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2002</td>
+                                    <td>6</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>378,510,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>8</td>
+                                    <td>5</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>386,010,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Vodka -->
-        <section class="record-container">
-            <details id="vodka">
-                <summary>Vodka</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="5" class="region jpn">JPN</td>
-                                <td>2006</td>
-                                <td>3</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>72,390,000</td>
-                            </tr>
-                            <tr>
-                                <td>2007</td>
-                                <td>8</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>354,620,000</td>
-                            </tr>
-                            <tr>
-                                <td>2008</td>
-                                <td>6</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>366,568,000</td>
-                            </tr>
-                            <tr>
-                                <td>2009</td>
-                                <td>5</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>511,298,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>22</td>
-                                <td>10</td>
-                                <td>5</td>
-                                <td>3</td>
-                                <td>4</td>
-                                <td>1,304,876,000</td>
-                            </tr>
-                            <tr>
-                                <td class="region uae">UAE</td>
-                                <td>Total</td>
-                                <td>4</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>4</td>
-                                <td>-</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Vodka -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#vodka">
+                    Vodka
+                </button>
+                <div id="vodka" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="5" class="region jpn">JPN</td>
+                                    <td>2006</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>72,390,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2007</td>
+                                    <td>8</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>354,620,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2008</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>366,568,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2009</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>511,298,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>22</td>
+                                    <td>10</td>
+                                    <td>5</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>1,304,876,000</td>
+                                </tr>
+                                <tr>
+                                    <td class="region uae">UAE</td>
+                                    <td>Total</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
+            </section>
 
-            </details> <!-- collapse -->
-        </section>
-
-        <!-- Wonder Acute -->
-        <section class="record-container">
-            <details id="wonder-acute">
-                <summary>Wonder Acute</summary>
-                <div class="table-wrapper">
-                    <table class="race-table">
-
-                        <thead>
-                            <tr>
-                                <th class="region-col">Region</th>
-                                <th>Year</th>
-                                <th>Starts</th>
-                                <th>1st</th>
-                                <th>2nd</th>
-                                <th>3rd</th>
-                                <th>Other</th>
-                                <th>Earnings</th>
-                            </tr>
-                        </thead>
-
-                        <tbody>
-                            <tr>
-                                <td rowspan="8" class="region jpn">JPN</td>
-                                <td>2009</td>
-                                <td>12</td>
-                                <td>6</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>6</td>
-                                <td>132,655,000</td>
-                            </tr>
-                            <tr>
-                                <td>2010</td>
-                                <td>3</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>21,350,000</td>
-                            </tr>
-                            <tr>
-                                <td>2011</td>
-                                <td>8</td>
-                                <td>2</td>
-                                <td>5</td>
-                                <td>0</td>
-                                <td>1</td>
-                                <td>187,823,000</td>
-                            </tr>
-                            <tr>
-                                <td>2012</td>
-                                <td>6</td>
-                                <td>1</td>
-                                <td>1</td>
-                                <td>2</td>
-                                <td>2</td>
-                                <td>175,458,000</td>
-                            </tr>
-                            <tr>
-                                <td>2013</td>
-                                <td>7</td>
-                                <td>1</td>
-                                <td>4</td>
-                                <td>2</td>
-                                <td>0</td>
-                                <td>185,370,000</td>
-                            </tr>
-                            <tr>
-                                <td>2014</td>
-                                <td>6</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>91,800,000</td>
-                            </tr>
-                            <tr>
-                                <td>2015</td>
-                                <td>6</td>
-                                <td>1</td>
-                                <td>0</td>
-                                <td>2</td>
-                                <td>3</td>
-                                <td>81,850,000</td>
-                            </tr>
-                            <tr class="total-row">
-                                <td>Total</td>
-                                <td>48</td>
-                                <td>13</td>
-                                <td>10</td>
-                                <td>8</td>
-                                <td>17</td>
-                                <td>876,306,000</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Wonder Acute -->
+            <section class="record-container">
+                <button class="summary-btn" data-bs-toggle="collapse" data-bs-target="#wonder-acute">
+                    Wonder Acute
+                </button>
+                <div id="wonder-acute" class="collapse">
+                    <div class="table-wrapper">
+                        <table class="race-table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Year</th>
+                                    <th>Starts</th>
+                                    <th>1st</th>
+                                    <th>2nd</th>
+                                    <th>3rd</th>
+                                    <th>Other</th>
+                                    <th>Earnings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="8" class="region jpn">JPN</td>
+                                    <td>2009</td>
+                                    <td>12</td>
+                                    <td>6</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>6</td>
+                                    <td>132,655,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2010</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>21,350,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2011</td>
+                                    <td>8</td>
+                                    <td>2</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>187,823,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2012</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>175,458,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2013</td>
+                                    <td>7</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>185,370,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2014</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>91,800,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2015</td>
+                                    <td>6</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>81,850,000</td>
+                                </tr>
+                                <tr class="total-row">
+                                    <td>Total</td>
+                                    <td>48</td>
+                                    <td>13</td>
+                                    <td>10</td>
+                                    <td>8</td>
+                                    <td>17</td>
+                                    <td>876,306,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-
-            </details> <!-- collapse -->
-        </section>
+            </section>
+        </div> <!-- container -->
     </main>
 
-    <!-- Hamburger Menu -->
-    <script>
-
-        const hamburger = document.getElementById("hamburger-btn");
-        const navMenu = document.getElementById("nav-menu");
-
-        hamburger.addEventListener("click", () => {
-            navMenu.classList.toggle("show-menu");
-        });
-
-    </script>
+    <!-- Footer -->
+    <footer class="bg-custom-success text-center text-white p-3">
+        &copy; 2024 Umamusume Database. All rights reserved.
+    </footer>
 
 </body>
 
