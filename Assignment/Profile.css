@@ -1,3 +1,4 @@
+/*Nav bar things*/
 .navbar-logo {
     display: flex;
     justify-content: center;
@@ -43,26 +44,31 @@
     height: 34px;
 }
 
+/*Gradient*/
 .bg-custom-success {
   background: linear-gradient(to left,#e76b90, #cf7933);
 }
 
+/*Line*/
 .dividing-line {
     padding-top: 15px;
     text-align: center;
     color: pink
 }
 
+/*Background colour for whole page*/
 body {
     background-color: rgb(255, 255, 237);
 }
 
+/*Tab/Profile menu container*/
 .profile-menu {
     max-width: 1350px;
     margin: auto;
     padding: 20px;
 }
 
+/*Tab/Profile menu title*/
 summary {
     color: black;
     padding: 12px 20px;
@@ -77,6 +83,7 @@ summary {
     position: relative;
 }
 
+/*Arrow*/
 summary::after {
     content: '';
     position: absolute;
@@ -114,6 +121,7 @@ details[open] summary::before {
     transform: translateY(-50%) rotate(180deg);
 }
 
+/* Alternating colour*/
 details:nth-child(even) {
     background-color: rgb(255, 209, 219);
 }
@@ -122,12 +130,14 @@ details:nth-child(odd) {
     background-color: rgb(255, 192, 208);
 }
 
+/*Hover effect*/
 summary:hover {
     background-color: #EBBABF;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+/*Entire Table size (Cannot see first), How each tab is seperated/ordered*/
 details {
     display: grid;
     grid-template-rows: auto 0fr;
@@ -136,14 +146,17 @@ details {
     border-radius: 8px;
 }
 
+/*Appear after clicked on*/
 details[open] {
     grid-template-rows: auto 1fr;
 }
 
+/*Image border*/
 .irl_image {
     border: black 4px solid;
 }
 
+/*Content inside tab*/
 .profile-content {
     overflow: hidden;
     max-height: 0;
@@ -169,9 +182,9 @@ details:not[open] .profile-content {
     min-width: 450px;
 }
 
+/*Table styling*/
 table,
-td,
-th {
+td{
     border: black solid 2px;
     border-collapse: collapse;
     padding: 10px;
@@ -179,8 +192,24 @@ th {
     color: #c45aaa;
 }
 
-.irl_image {
-    border-radius: 10px;
+.table_title{
+    color: black;
+}
+
+.dark_brown{
+    color: #5D4037;
+}
+
+.chestnut{
+    color: #CD853F;
+}
+
+.brown{
+    color: #8B4513;
+}
+
+.grey{
+    color:#B0B0B0;
 }
 
 .mare {

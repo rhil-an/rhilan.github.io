@@ -1,10 +1,8 @@
-//Profile.js serve 2 functions: make sure only 1 profile is open, fix animation bug (sometimes work, sometimes doesn't, also fix the no closing animation)
-
 const detailsList = document.querySelectorAll("details");
 
 detailsList.forEach(details => {
   const summary = details.querySelector("summary");
-  const content = details.querySelector(".profile-content");
+  const content = details.querySelector(".table-wrapper");
 
   summary.addEventListener("click", e => {
     e.preventDefault(); //ALWAYS stop default toggle (Instant Appear)
@@ -19,7 +17,7 @@ detailsList.forEach(details => {
         content.style.animation = "";
       }, { once: true });
 
-    }
+    } 
     else {
 
       //close all others first
@@ -35,17 +33,4 @@ detailsList.forEach(details => {
     }
 
   });
-});
-
-// Auto-open character profile based on URL hash
-document.addEventListener('DOMContentLoaded', function () {
-  const hash = window.location.hash.substring(1);
-  if (hash) {
-    const element = document.getElementById(hash);
-    if (element && element.tagName === 'DETAILS') {
-      element.open = true;
-      // Smooth scroll to the element
-      setTimeout(() => element.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
-    }
-  }
 });

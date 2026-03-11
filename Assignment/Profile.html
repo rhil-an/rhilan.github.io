@@ -8,25 +8,13 @@
     <title>Umamusume Database | Profile</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="Profile.css">
     <script src="Profile.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Auto-open character profile based on URL hash
-        document.addEventListener('DOMContentLoaded', function() {
-            const hash = window.location.hash.substring(1);
-            if (hash) {
-                const element = document.getElementById(hash);
-                if (element && element.tagName === 'DETAILS') {
-                    element.open = true;
-                    // Smooth scroll to the element
-                    setTimeout(() => element.scrollIntoView({behavior: 'smooth', block: 'start'}), 100);
-                }
-            }
-        });
-    </script>
+    
 </head>
 
 <body>
@@ -83,25 +71,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Agnes Tachyon</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Sunday Silence(USA), Agnes Flora(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Chestnut</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="chestnut">Chestnut</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>13th Apr 1998</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Shadai Farm</td>
                                 </tr>
                             </tfoot>
@@ -116,25 +104,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Daiwa Scarlet</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Agnes Tachyon(JPN), Scarlet Bouquet(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="mare">Mare</td>
-                                    <td>Color</td>
-                                    <td>Chestnut</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="chestnut">Chestnut</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>13th May 2004</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Shadai Farm</td>
                                 </tr>
                             </tfoot>
@@ -149,25 +137,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>El Condor Pasa</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Kingmambo(USA), Saddlers Gal(IRE)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Dark Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="dark_brown">Dark Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>17th Mar 1995</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Takashi Watanabe</td>
                                 </tr>
                             </tfoot>
@@ -182,25 +170,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Fine Motion</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Danehill(USA), Cocotte(GB)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="mare">Mare</td>
-                                    <td>Color</td>
-                                    <td>Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="brown">Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>27th Jan 1999</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Barronstown Stud and Orpendale</td>
                                 </tr>
                             </tfoot>
@@ -215,25 +203,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Gold Ship</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Stay Gold(JPN), Point Flag(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Grey</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="grey">Grey</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>6th Mar 2009</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Deguchi Bokujo</td>
                                 </tr>
                             </tfoot>
@@ -248,25 +236,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Grass Wonder</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Silver Hawk(USA), Ameriflora(USA)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Chestnut</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="chestnut">Chestnut</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>18th Feb 1995</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Phillips Racing Partnership & John Phillips</td>
                                 </tr>
                             </tfoot>
@@ -281,25 +269,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Haru Urara</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Nippo Teio(JPN), Heroine(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="mare">Mare</td>
-                                    <td>Color</td>
-                                    <td>Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="brown">Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>27th Feb 1996</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Nobuta Bokujo</td>
                                 </tr>
                             </tfoot>
@@ -314,25 +302,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Silence Suzuka</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Sunday Silence(USA), Wakia(USA)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Chestnut</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="chestnut">Chestnut</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>1st May 1994</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Inahara Bokujo</td>
                                 </tr>
                             </tfoot>
@@ -347,25 +335,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Special Week</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Sunday Silence(USA), Campaign Girl(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Dark Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="dark_brown">Dark Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>2nd May 1995</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Hidaka Taiyo Bokujo</td>
                                 </tr>
                             </tfoot>
@@ -380,25 +368,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Tanino Gimlet</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Brian's Time(USA), Tanino Crystal(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="brown">Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>4th May 1999</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Country Bokujo</td>
                                 </tr>
                             </tfoot>
@@ -413,25 +401,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Vodka</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Tanino Gimlet(JPN), Tanino Sister(JPN)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="mare">Mare</td>
-                                    <td>Color</td>
-                                    <td>Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="brown">Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>4th Apr 2004</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Country Bokujo</td>
                                 </tr>
                             </tfoot>
@@ -446,25 +434,25 @@
                         <table>
                             <thead>
                                 <tr>
-                                    <td>Name</td>
+                                    <td class="table_title">Name</td>
                                     <td>Wonder Acute</td>
-                                    <td>Pedigree</td>
+                                    <td class="table_title">Pedigree</td>
                                     <td>Charismatic(USA), Wonder Heritage(USA)</td>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="gender">Gender</td>
+                                    <td class="table_title">Gender</td>
                                     <td class="stallion">Stallion</td>
-                                    <td>Color</td>
-                                    <td>Brown</td>
+                                    <td class="table_title">Color</td>
+                                    <td class="brown">Brown</td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>Date of Birth</td>
+                                    <td class="table_title">Date of Birth</td>
                                     <td>14th Mar 2006</td>
-                                    <td>Breeding Farm</td>
+                                    <td class="table_title">Breeding Farm</td>
                                     <td>Fukuda Farm</td>
                                 </tr>
                             </tfoot>
