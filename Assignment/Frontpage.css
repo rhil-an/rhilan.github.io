@@ -45,7 +45,7 @@ body{
 }
 
 .bg-custom-success {
-  background: linear-gradient(to left,#e27a99, #cf7933);
+  background: linear-gradient(to left,#f992b1, #f79d53);
 }
 
 .intro {
@@ -96,4 +96,9 @@ body{
   text-align: center;
   color: white;
   font-family:'Poppins', 'Inter', sans-serif;
+}
+
+footer {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
 }
