@@ -17,11 +17,11 @@
             <form id="loginForm" action="Frontpage.html" method="get">
                 <div class="mb-3">
                     <label for="username" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="username" required name="username">
+                    <input type="text" class="form-control" id="username" required name="username" placeholder="admin">
                 </div>
                 <div class="mb-3">
                     <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" required name="password">
+                    <input type="password" class="form-control" id="password" required name="password" placeholder="umamusume">
                 </div>
                 <button type="submit" class="btn btn-success w-100">Login</button>
             </form>
@@ -36,7 +36,7 @@
             const pass = document.getElementById("password").value;
 
             // Example check (replace with real logic)
-            if (user === "admin" && pass === "1234") {
+            if (user === "admin" && pass === "umamusume") {
                 window.location.href = "Frontpage.html"; // go to homepage
             } else {
                 alert("Invalid username or password!");
