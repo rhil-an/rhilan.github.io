@@ -70,9 +70,19 @@
   z-index: -1;  
 }
 
+.text-teal {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fs-5 {
+  color: rgb(121, 10, 10);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
 /*Gradient*/
 .bg-custom-success {
   background: linear-gradient(to left,#f992b1, #f79d53);
+  box-shadow: 0 4px 10px rgb(0,0,0,0.1);
 }
 
 /*Line*/
@@ -115,7 +125,7 @@ body {
 
 /*Tab/Profile menu title*/
 summary {
-    color: black;
+    color: rgb(220, 105, 142);
     padding: 12px 20px;
     cursor: pointer;
     border-radius: 6px;
@@ -177,7 +187,7 @@ details:nth-child(odd) {
 
 /*Hover effect*/
 summary:hover {
-    background-color: #EBBABF;
+    background-color: #fdb8cc;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -198,7 +208,8 @@ details[open] {
 
 /*Image border*/
 .irl_image {
-    border: black 4px solid;
+    border: rgb(231, 139, 165) 4px solid;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
 }
 
 /*Content inside tab*/
@@ -230,15 +241,16 @@ details:not[open] .profile-content {
 /*Table styling*/
 table,
 td{
-    border: black solid 2px;
+    border: rgb(238, 149, 177) solid 2px;
     border-collapse: collapse;
     padding: 10px;
     background-color: lightgoldenrodyellow;
     color: #c45aaa;
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
 }
 
 .table_title{
-    color: black;
+    color: rgb(222, 105, 138);
 }
 
 .dark_brown{
@@ -262,12 +274,17 @@ td{
 }
 
 .stallion {
-    color: blue;
+    color: rgb(99, 99, 255);
 }
 
 footer {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
+    color: #fff4f4;
+}
+footer a {
+    color: white;
+    font-weight: bold;
 }
 
 @keyframes fadeSlideIn {
