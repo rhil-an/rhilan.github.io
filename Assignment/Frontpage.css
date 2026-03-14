@@ -65,13 +65,13 @@ body{
 
 .card{
     background-color: #ffe4e1; 
-    color: #bd2c61;
+    color: #d23e74;
 }
 
 .btn.btn-primary.btn-sm{
   background: linear-gradient(to right,  #ffffff, #f0f0f034);
-  border: 2px solid #555555;
-  color: #5a3e2b;
+  border: 2px solid #e18098;
+  color: #d35e81;
   font-size: 1rem;
   font-weight: 600;
   padding: 10px 20px;
@@ -89,7 +89,7 @@ body{
 
 
 .character-bar{
-  background-color: #e5727c;
+  background-color: #ed8186;
   font-size: 30px;
 }
 
@@ -102,9 +102,31 @@ body{
   font-family:'Poppins', 'Inter', sans-serif;
 }
 
+.fs-5 {
+  color: rgb(36, 109, 109);
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+.qn h4 {
+  color: #cb3f44;
+}
+.qn p {
+  color: #d3494e;
+}
+.qn p a {
+  color: #ce4449;
+  font-weight: bold;
+}
+
 /*Footer*/
 
 footer {
   font-family: 'Inter', sans-serif;
   font-size: 1rem;
+  color: #fff4f4;
+}
+
+footer a {
+    color: white;
+    font-weight: bold;
 }
