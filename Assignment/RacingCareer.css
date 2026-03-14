@@ -59,6 +59,7 @@ body{
 }
 .bg-custom-success {
     background: linear-gradient(to left,#f992b1, #f79d53);
+    box-shadow: 0 4px 10px rgb(0,0,0,0.1);
 }
 
 /*Intro style*/
@@ -76,6 +77,15 @@ body{
   object-fit: cover;
   opacity: 0.5;
   z-index: -1;  
+}
+
+.text-teal {
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fs-5 {
+    color: rgb(0, 86, 117);
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /*Line*/
@@ -106,13 +116,18 @@ body{
 
 /* Record style */
 .record-container {
-    background-color: lightgoldenrodyellow;
-    border: 2px solid rgb(244, 120, 141);
     border-radius: 10px;
     padding: 30px;
     margin-bottom: 30px;
-    color: rgb(240, 116, 137);
+    color: rgb(219, 118, 135);
     font-size: 19px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.record-container:nth-child(odd) {
+    background-color: rgb(255, 207, 219);
+}
+.record-container:nth-child(even) {
+    background-color: rgb(255, 222, 233);
 }
 
 /* Summary button */
@@ -120,7 +135,7 @@ body{
     width: 100%;
     background: transparent;
     border: none;
-    color: rgb(224, 121, 138);
+    color: rgb(219, 118, 135);
     font-size: 19px;
     font-weight: bold;
     text-align: left;
@@ -147,11 +162,12 @@ body{
     width: 100%;
     border-collapse: collapse;
     background-color: lightgoldenrodyellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 .race-table th,
 .race-table td {
     padding: 12px;
-    border: 1px solid rgb(224, 121, 138);
+    border: 2px solid rgb(229, 138, 153);
     text-align: center;
 }
 .race-table thead {
@@ -170,7 +186,7 @@ body{
     font-weight: bold;
 }
 .jpn {
-    background-color: rgb(224, 121, 138);
+    background-color: rgb(229, 138, 153);
     color: lightgoldenrodyellow;
     font-weight: bold;
 }
@@ -184,6 +200,11 @@ body{
 footer {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
+    color: #fff4f4;
+}
+footer a {
+    color: white;
+    font-weight: bold;
 }
 
 /* Responsive */
