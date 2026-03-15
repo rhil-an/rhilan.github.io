@@ -68,6 +68,29 @@ body{
     color: #d23e74;
 }
 
+.card-img-wrapper {
+  position: relative;
+}
+
+.card-img-wrapper .default-img {
+  display: block; 
+  width: 100%;
+  transition: opacity 0.3s ease;
+}
+
+.card-img-wrapper .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .default-img { opacity: 0; }
+.card:hover .hover-img { opacity: 1; }
+
+
 .btn.btn-primary.btn-sm{
   background: linear-gradient(to right,  #ffffff, #f0f0f034);
   border: 2px solid #e18098;
