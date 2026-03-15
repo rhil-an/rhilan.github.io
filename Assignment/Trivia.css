@@ -1,3 +1,4 @@
+/*Navigation*/
 .navbar-logo{
   display: flex;
   justify-content:center;
@@ -51,11 +52,13 @@
   height:34px;
 }
 
+/*Background color*/
 .bg-custom-success {
   background: linear-gradient(to left,#f992b1, #f79d53);
   box-shadow: 0 4px 10px rgb(0,0,0,0.1);
 }
 
+/*Intro section*/
 .intro {
   position: relative;
   background-color: transparent;
@@ -269,6 +272,7 @@ body {
     text-align: center;
 }
 
+/*Footer*/
 footer {
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
@@ -279,6 +283,7 @@ footer a {
     font-weight: bold;
 }
 
+/*Animations*/
 @keyframes fadeSlideIn {
     from {
         opacity: 0;
